@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Frontend Mentor | Age Calculator App</title>
+</head>
+<body>
+    <main>
+        <!-- card -->
+        <div class="age-app">
+            <!-- input area -->
+            <div class="form">
+                <div class="form__control">
+                    <label for="day" class="day-label">Day</label>
+                    <input type="text" id="day" placeholder="DD">
+                    <small class="day-error"></small>
+                </div>
+                <div class="form__control">
+                    <label for="month" class="month-label">Month</label>
+                    <input type="text" id="month" placeholder="MM">
+                    <small class="month-error"></small>
+                </div>
+                <div class="form__control">
+                    <label for="year" class="year-label">Year</label>
+                    <input type="text" id="year" placeholder="YYYY">
+                    <small class="year-error"></small>
+                </div>
+            </div>
+
+            <!-- button area -->
+            <div class="submit">
+                <div class="line"></div>
+                <button id="submit-btn" type="button">
+                    <img src="icon-arrow.svg" alt="icon-arrow">
+                </button>
+            </div>
+
+            <ul class="age-display">
+                <li>
+                    <span id="year-el">- -</span> years
+                </li>
+                <li>
+                    <span id="month-el">- -</span> months
+                </li>
+                <li>
+                    <span id="day-el">- -</span> days
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
