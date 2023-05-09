@@ -81,7 +81,26 @@ function checkFormError() {
         isYearValid = true
     }
 
-
+        // if isNaN
+        if (isNaN(dayInput.value)) {
+            isDayValid = false
+            dayError.textContent = 'Put only Numbers';
+            
+        } else {
+            isDayValid = true
+        }
+        if (isNaN(monthInput.value)) {
+            isMonthValid = false
+            monthError.textContent = 'Put only Numbers';
+        } else {
+            isMonthValid = true
+        }
+        if (isNaN(yearInput.value)) {
+            isYearValid = false
+            yearError.textContent = 'Put only Numbers';
+        } else {
+            isYearValid = true
+        }
 
     // add array for days in each month
     // calculate leap year
